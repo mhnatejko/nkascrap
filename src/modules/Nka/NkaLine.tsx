@@ -69,7 +69,7 @@ const NkaLine = ({ lines }: TProps) => {
                         </Box>
                     )}
                     {busStop && (
-                        <TimingList currentLineBusStops={busStops.find(({ name }) => name === busStop)?.hours}/>
+                        <TimingList currentLineBusStops={busStops.find(({ name }) => name === busStop)?.hours as any}/>
                     )}
                 </div>
             ))}
